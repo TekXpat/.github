@@ -1,0 +1,34 @@
+name: Bug report
+description: Something isn't working as it should.
+title: "bug: "
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: Include error messages or screenshots if you have them.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected to happen
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Where you saw it, e.g. browser and OS, device, app version or commit, local or deployed.
+    validations:
+      required: false
